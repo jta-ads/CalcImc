@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, label{
+    color: aliceblue;
+}
+
+body{
+    height: 100vw;
+    background-color: #090e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: #1e1e32;
+    width: 48vw;
+    height: 45vh;
+    border-radius: 10px;
+    position: relative;
+    /* text-align: center; */
+}
+
+/* FORMULARIO PRINCIPAL */
+
+#formPrincipal{
+    margin: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#formPrincipal h1{
+    margin-bottom: .8em;
+}
+
+#alturaCorporal, #pesoCorporal{
+    display: flex;
+    flex-direction: column;
+}
+
+#alturaCorporal input, #pesoCorporal input{
+    height: 3em;
+    width: 34vw;
+    border-radius: 1em;
+    border: none;
+    padding-left: 1.5em;
+    margin-top: 9px;
+}
+
+#formPrincipal #btn{
+    margin: 1em 0;
+    width: 40vw;
+    text-align: center;
+}
+
+#btn input{
+    width: 14vw;
+    height: 5vh;
+    margin: 0 2em;
+    font-size: .8em;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn input:hover{
+    opacity: .5;
+    transition: .5s;
+}
+
+#btn input[type="submit"]{
+    background-color: rgb(234, 13, 57);
+    color: aliceblue;
+}
+
+#btn input[type="reset"]{
+    background-color: darkgrey;
+    color: aliceblue;
+}
+
+/* Tabela */
+
+#tabela{
+    position: absolute;
+    top: 0;
+    bottom: 1%;
+    left: 2%;
+    right: 2%;
+    margin: 2em 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: aliceblue;
+}
+#tabela #cabecalho, #dados{
+    font-size: .9em;
+}
+#tabela #cabecalho p{
+    margin-top: 2em;
+}
+#dados td{
+    border-top: 1px solid;
+    text-align: center;
+    font-size: .75em;
+    padding: .2em 3em;
+}
+#dados table{
+    border-bottom: 1px solid;
+    margin-top: 0;
+}
+#tabela #btnTabela button{
+    width: 14vw;
+    height: 5vh;
+    margin: 0 2em;
+    font-size: .8em;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(234, 13, 57);
+    color: aliceblue;
+}
+#tabela #btnTabela button:hover{
+    opacity: .5;
+    transition: .5s;
+}

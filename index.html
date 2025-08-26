@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <form id="formPrincipal" action="#">
+            <h1>Calculadora de IMC</h1>
+            <div id="alturaCorporal">
+                <label for="altura">Altura:</label>
+                <input type="text" name="altura" id="altura" placeholder="Exemplo 1.75">
+            </div>
+            <div id="pesoCorporal">
+                <label for="peso">Peso:</label>
+                <input type="text" name="peso" id="peso" placeholder="Exemplo 70.5">
+            </div>
+            <div id="btn">
+                <input type="submit" value="Calcular">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+        <div id="tabela">
+            <div id="cabecalho">
+                <h1>Seu IMC: <span id="imc">46.3</span></h1>
+                <h3>Situação atual: <span id="situacaoAtual">Obesidade grave</span></h3>
+                <p>Confira as classificações</p>
+            </div>
+            <div id="dados">
+                <table>
+                    <tr>
+                        <th>IMC</th>
+                        <th>Classificação</th>
+                        <th>Obesidade</th>
+                    </tr>
+                    <tr>
+                        <td>Menor que 18,5</td>
+                        <td>Magreza</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,5 e 24,9</td>
+                        <td>Normal</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25,0 e 29,9</td>
+                        <td>Sobrepeso</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30,0 e 39,9</td>
+                        <td>Obesidade</td>
+                        <td>II</td>
+                    </tr>
+                    <tr>
+                        <td>Maior que 40,0</td>
+                        <td>Obesidade Grave</td>
+                        <td>III</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="btnTabela">
+                <button>Voltar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
