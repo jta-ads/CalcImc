@@ -10,7 +10,7 @@ h1, label{
 }
 
 body{
-    height: 100vw;
+    height: 50vw;
     background-color: #090e21;
     display: flex;
     justify-content: center;
